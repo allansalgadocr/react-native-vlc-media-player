@@ -356,6 +356,7 @@ class ReactVlcPlayerView extends TextureView implements
             }
             DisplayMetrics dm = getResources().getDisplayMetrics();
             Media m = null;
+            libvlc.setUserAgent("TicolineaPlay","TicolineaPlay/1.0 Python/2.6.0");
             if (isNetwork) {
                 Uri uri = Uri.parse(uriString);
                 m = new Media(libvlc, uri);
